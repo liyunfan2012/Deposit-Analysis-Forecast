@@ -46,7 +46,7 @@ The model leverages historical economic data and engineered features to predict 
 
 - **2.Data Exploration**
 
-    Preliminary rexploration of data, plot trend of target variables and major drivers.
+    Preliminary exploration of data, plot trend of target variables and major drivers.
 
 
 - **3.1 Model building linear**
