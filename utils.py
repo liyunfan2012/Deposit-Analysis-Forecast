@@ -10,7 +10,7 @@ def timekey_to_quarter(timekey, base_timekey=174, base_year=2023, base_quarter=2
 
 
 
-def plot_bt(bt, deposits_col, pred_col, 
+def plot_bt(bt, deposits_col, pred_col,ylabel= 'Domestic Office Deposits',
             title='Backtesting of 1-year Forecasted Deposits'):
     fig, ax = plt.subplots(figsize=(12, 6))
     
@@ -21,7 +21,7 @@ def plot_bt(bt, deposits_col, pred_col,
     
     ax.set_ylim(bottom=10_000_000, top=19_000_000)
     ax.set_xlabel('Quarter', fontsize=12)
-    ax.set_ylabel('Domestic Office Deposits (Avg)', fontsize=12)
+    ax.set_ylabel(ylabel, fontsize=12)
     ax.set_title(title, fontsize=14, fontweight='bold')
     ax.legend(fontsize=11)
     ax.grid(True, alpha=0.3)
